@@ -3,7 +3,9 @@
 Connect **Webflow Forms** to **Odoo CRM** through secure webhooks. Every Webflow
 form submission automatically creates (or updates) a CRM Lead in Odoo.
 
-Compatible with **Odoo 18** and **Odoo 19**.
+Compatible with **Odoo 18** and **Odoo 19**, and runs on **Odoo Online (SaaS)**,
+**Odoo.sh** and **On-Premise** — it has no external Python dependencies and needs
+no server-level access.
 
 ---
 
