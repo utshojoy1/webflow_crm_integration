@@ -2,7 +2,7 @@
 {
     'name': 'Webflow CRM Integration',
     'price': 49.99,
-    'currency': 'USD'
+    'currency': 'USD',
     'version': '19.0.1.0.1',
     'category': 'Sales/CRM',
     'summary': 'Integrate Webflow Forms with Odoo CRM via secure webhooks.',
