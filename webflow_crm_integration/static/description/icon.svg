@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="wf" x1="64" y1="80" x2="184" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#DCEBFF"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0B3AA6" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- App tile -->
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <!-- Soft top highlight -->
+  <path d="M56 0 H200 A56 56 0 0 1 256 56 V120 H0 V56 A56 56 0 0 1 56 0 Z" fill="#ffffff" opacity="0.07"/>
+  <!-- Hairline inner border -->
+  <rect x="1" y="1" width="254" height="254" rx="55" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="2"/>
+
+  <!-- Webflow-style W mark -->
+  <path d="M58 90 L92 170 L120 110 L148 170 L182 90"
+        fill="none" stroke="url(#wf)" stroke-width="18"
+        stroke-linecap="round" stroke-linejoin="round" filter="url(#sh)"/>
+
+  <!-- Sync / lead-captured badge -->
+  <g filter="url(#sh)">
+    <circle cx="196" cy="186" r="27" fill="#22C55E" stroke="#ffffff" stroke-width="6"/>
+    <path d="M184 186 l8 9 16 -18" fill="none" stroke="#ffffff"
+          stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

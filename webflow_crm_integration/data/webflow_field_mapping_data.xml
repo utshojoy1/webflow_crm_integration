@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Default Webflow -> CRM field mappings.
+             noupdate=1 so administrators can safely edit these afterwards. -->
+        <record id="map_name" model="webflow.field.mapping">
+            <field name="sequence">1</field>
+            <field name="webflow_field">Contact Name</field>
+            <field name="odoo_field">contact_name</field>
+            <field name="mapping_type">char</field>
+        </record>
+        <record id="map_email" model="webflow.field.mapping">
+            <field name="sequence">2</field>
+            <field name="webflow_field">Contact Email</field>
+            <field name="odoo_field">email_from</field>
+            <field name="mapping_type">email</field>
+        </record>
+        <record id="map_phone" model="webflow.field.mapping">
+            <field name="sequence">3</field>
+            <field name="webflow_field">Contact Number</field>
+            <field name="odoo_field">phone</field>
+            <field name="mapping_type">phone</field>
+        </record>
+        <record id="map_company" model="webflow.field.mapping">
+            <field name="sequence">4</field>
+            <field name="webflow_field">Company Name</field>
+            <field name="odoo_field">partner_name</field>
+            <field name="mapping_type">char</field>
+        </record>
+        <record id="map_subject" model="webflow.field.mapping">
+            <field name="sequence">5</field>
+            <field name="webflow_field">Subject</field>
+            <field name="odoo_field">name</field>
+            <field name="mapping_type">char</field>
+        </record>
+        <record id="map_message" model="webflow.field.mapping">
+            <field name="sequence">6</field>
+            <field name="webflow_field">Contact Message</field>
+            <field name="odoo_field">description</field>
+            <field name="mapping_type">char</field>
+        </record>
+        <record id="map_service" model="webflow.field.mapping">
+            <field name="sequence">7</field>
+            <field name="webflow_field">service type</field>
+            <field name="odoo_field">tag_ids</field>
+            <field name="mapping_type">tag</field>
+        </record>
+        <record id="map_budget" model="webflow.field.mapping">
+            <field name="sequence">8</field>
+            <field name="webflow_field">Budget</field>
+            <field name="odoo_field">expected_revenue</field>
+            <field name="mapping_type">float</field>
+        </record>
+        <record id="map_country" model="webflow.field.mapping">
+            <field name="sequence">9</field>
+            <field name="webflow_field">Country</field>
+            <field name="odoo_field">country_id</field>
+            <field name="mapping_type">country</field>
+        </record>
+        <record id="map_page_url" model="webflow.field.mapping">
+            <field name="sequence">10</field>
+            <field name="webflow_field">Page URL</field>
+            <field name="odoo_field">webflow_source_url</field>
+            <field name="mapping_type">char</field>
+        </record>
+        <record id="map_utm_source" model="webflow.field.mapping">
+            <field name="sequence">11</field>
+            <field name="webflow_field">UTM Source</field>
+            <field name="odoo_field">source_id</field>
+            <field name="mapping_type">utm_source</field>
+        </record>
+        <record id="map_utm_medium" model="webflow.field.mapping">
+            <field name="sequence">12</field>
+            <field name="webflow_field">UTM Medium</field>
+            <field name="odoo_field">medium_id</field>
+            <field name="mapping_type">utm_medium</field>
+        </record>
+        <record id="map_utm_campaign" model="webflow.field.mapping">
+            <field name="sequence">13</field>
+            <field name="webflow_field">UTM Campaign</field>
+            <field name="odoo_field">campaign_id</field>
+            <field name="mapping_type">utm_campaign</field>
+        </record>
+    </data>
+</odoo>

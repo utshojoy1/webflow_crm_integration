@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_crm_lead_form_webflow" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.webflow</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Webflow" name="webflow_info" invisible="not is_from_webflow">
+                    <group>
+                        <field name="is_from_webflow" invisible="1"/>
+                        <field name="webflow_form_name" readonly="1"/>
+                        <field name="webflow_source_url" widget="url" readonly="1"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_crm_lead_search_webflow" model="ir.ui.view">
+        <field name="name">crm.lead.search.inherit.webflow</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.view_crm_case_leads_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <filter name="from_webflow" string="From Webflow"
+                        domain="[('is_from_webflow', '=', True)]"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

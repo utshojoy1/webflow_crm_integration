@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_webflow_log_user,webflow.log.user,model_webflow_integration_log,group_webflow_user,1,0,0,0
+access_webflow_log_manager,webflow.log.manager,model_webflow_integration_log,group_webflow_manager,1,1,1,1
+access_webflow_mapping_user,webflow.mapping.user,model_webflow_field_mapping,group_webflow_user,1,0,0,0
+access_webflow_mapping_manager,webflow.mapping.manager,model_webflow_field_mapping,group_webflow_manager,1,1,1,1
+access_webflow_dashboard_user,webflow.dashboard.user,model_webflow_dashboard,group_webflow_user,1,1,1,1
+access_webflow_dashboard_manager,webflow.dashboard.manager,model_webflow_dashboard,group_webflow_manager,1,1,1,1
+access_webflow_wizard_manager,webflow.wizard.manager,model_webflow_connection_wizard,group_webflow_manager,1,1,1,1

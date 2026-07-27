@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_webflow_connection_wizard_form" model="ir.ui.view">
+        <field name="name">webflow.connection.wizard.form</field>
+        <field name="model">webflow.connection.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Connect Webflow">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>Webflow Connection Setup</h1>
+                    </div>
+                    <group string="Step 1 &amp; 2 — Credentials">
+                        <field name="api_token" password="True"
+                               placeholder="Webflow API Token (Bearer)"/>
+                        <field name="site_id" placeholder="Webflow Site ID"/>
+                        <field name="api_version"/>
+                    </group>
+                    <group string="Step 3 — Copy the Webhook details into Webflow">
+                        <field name="webhook_url" widget="CopyClipboardChar" readonly="1"/>
+                        <field name="webhook_secret" widget="CopyClipboardChar" readonly="1"/>
+                    </group>
+                    <div class="alert alert-info" role="status">
+                        <p><strong>Step 4 — In Webflow:</strong></p>
+                        <ol>
+                            <li>Open <b>Project Settings → Integrations / Webhooks</b>.</li>
+                            <li>Create a new webhook (or use Webflow Logic / form automation).</li>
+                            <li>Paste the <b>Webhook URL</b> above.</li>
+                            <li>Add the <b>Secret Token</b> above (as header <code>X-Webhook-Secret</code>
+                                or the <code>?secret=</code> query parameter).</li>
+                            <li>Select <b>Form Submission</b> as the trigger.</li>
+                            <li>Save and publish the site.</li>
+                        </ol>
+                        <p><strong>Step 5 —</strong> Return here and click <b>Test Connection</b>.</p>
+                    </div>
+                    <group>
+                        <field name="connection_status" readonly="1"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_test_connection" type="object"
+                            string="Test Connection" class="btn-primary"/>
+                    <button name="action_save_credentials" type="object"
+                            string="Save"/>
+                    <button string="Close" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_webflow_connection_wizard" model="ir.actions.act_window">
+        <field name="name">Connection Wizard</field>
+        <field name="res_model">webflow.connection.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

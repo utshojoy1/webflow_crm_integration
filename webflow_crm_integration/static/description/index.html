@@ -1,0 +1,134 @@
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan" style="color:#875A7B;">Webflow CRM Integration</h2>
+      <h3 class="oe_slogan" style="font-size:1.2em;">Turn every Webflow form submission into an Odoo CRM lead — automatically and securely.</h3>
+    </div>
+    <div class="oe_span12">
+      <p class="oe_mt32" style="text-align:center;">
+        Connect your <b>Webflow Forms</b> to <b>Odoo CRM</b> through secure webhooks.
+        Every submission creates or updates a CRM Lead in real time, with custom field
+        mapping, duplicate detection, full logging and a health dashboard.
+        Compatible with <b>Odoo 18</b> and <b>Odoo 19</b>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan">Key Features</h2>
+    </div>
+    <div class="oe_span6">
+      <h3 class="oe_slogan" style="text-align:left;">🔗 Real-time webhook sync</h3>
+      <p class="oe_mt32">
+        A public endpoint (<code>POST /webflow/webhook</code>) receives every form
+        submission and instantly creates or updates a CRM lead.
+      </p>
+    </div>
+    <div class="oe_span6">
+      <h3 class="oe_slogan" style="text-align:left;">🔐 Secure by design</h3>
+      <p class="oe_mt32">
+        Shared-secret validation, optional <b>HMAC-SHA256</b> signature checks,
+        per-IP rate limiting and full request logging.
+      </p>
+    </div>
+    <div class="oe_span6">
+      <h3 class="oe_slogan" style="text-align:left;">🧩 Custom field mapping</h3>
+      <p class="oe_mt32">
+        Map any Webflow field to any Odoo CRM field from the UI. Keys are matched
+        case-insensitively, so labels just work.
+      </p>
+    </div>
+    <div class="oe_span6">
+      <h3 class="oe_slogan" style="text-align:left;">👥 Duplicate detection</h3>
+      <p class="oe_mt32">
+        Detect duplicates by email or phone with configurable
+        <b>Create / Update / Skip</b> strategies.
+      </p>
+    </div>
+    <div class="oe_span6">
+      <h3 class="oe_slogan" style="text-align:left;">📊 Health dashboard</h3>
+      <p class="oe_mt32">
+        Volume, success rate, today's leads, last sync time and overall health
+        status at a glance.
+      </p>
+    </div>
+    <div class="oe_span6">
+      <h3 class="oe_slogan" style="text-align:left;">🪵 Logs &amp; retries</h3>
+      <p class="oe_mt32">
+        Every request is logged with its payload, status and processing time.
+        A scheduled action retries failed imports automatically.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan">Set up in three steps</h2>
+    </div>
+    <div class="oe_span4">
+      <h3 class="oe_slogan" style="text-align:left;">1. Enable</h3>
+      <p>Go to <b>CRM → Configuration → Webflow Integration</b>, toggle it on and
+         paste your Webflow API token and Site ID.</p>
+    </div>
+    <div class="oe_span4">
+      <h3 class="oe_slogan" style="text-align:left;">2. Connect</h3>
+      <p>Copy the auto-generated <b>Webhook URL</b> and <b>secret</b> into Webflow's
+         form webhook (or use the guided Connection Wizard).</p>
+    </div>
+    <div class="oe_span4">
+      <h3 class="oe_slogan" style="text-align:left;">3. Go live</h3>
+      <p>Publish your Webflow site, submit a form and watch the lead land in Odoo
+         CRM with full logs.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan">Default field mapping</h2>
+      <table class="table table-striped" style="max-width:640px;margin:0 auto;">
+        <thead>
+          <tr><th>Webflow Field</th><th>Odoo CRM Field</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Contact Name</td><td>Contact Name</td></tr>
+          <tr><td>Contact Email</td><td>Email</td></tr>
+          <tr><td>Contact Number</td><td>Phone</td></tr>
+          <tr><td>Company Name</td><td>Company Name</td></tr>
+          <tr><td>Subject</td><td>Opportunity (name)</td></tr>
+          <tr><td>Contact Message</td><td>Description</td></tr>
+          <tr><td>Service Type</td><td>Tags</td></tr>
+          <tr><td>Budget</td><td>Expected Revenue</td></tr>
+          <tr><td>Country</td><td>Country</td></tr>
+          <tr><td>Page URL</td><td>Source Page URL</td></tr>
+          <tr><td>UTM Source / Medium / Campaign</td><td>UTM Source / Medium / Campaign</td></tr>
+        </tbody>
+      </table>
+      <p class="oe_mt32" style="text-align:center;">
+        All mappings are editable in the UI to match your own form's labels.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <div class="oe_span12">
+      <h2 class="oe_slogan">Requirements &amp; support</h2>
+      <p class="oe_mt32" style="text-align:center;">
+        Depends on the standard Odoo modules <b>CRM</b>, <b>Mail</b> and <b>UTM</b> only —
+        no external services required beyond your Webflow account.
+        Licensed under <b>LGPL-3</b>.
+      </p>
+      <p style="text-align:center;">
+        Published by <b>Utsho Joy</b> · <a href="https://utshojoy.netlify.app/">utshojoy.netlify.app</a>
+      </p>
+    </div>
+  </div>
+</section>
