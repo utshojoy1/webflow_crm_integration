@@ -28,6 +28,7 @@ dependencies and no server-level access required.
     'maintainer': 'Utsho Joy',
     'website': 'https://utshojoy.netlify.app/',
     'license': 'LGPL-3',
+    'images': ['static/description/cover.png'],
     'depends': ['crm', 'mail', 'utm'],
     'data': [
         'security/webflow_security.xml',
