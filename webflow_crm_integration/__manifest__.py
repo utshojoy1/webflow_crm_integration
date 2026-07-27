@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Webflow CRM Integration',
-    'version': '19.0.1.0.13',
+    'price': 49.99,
+    'currency': 'USD',
+    'version': '19.0.1.0.1',
     'category': 'Sales/CRM',
     'summary': 'Integrate Webflow Forms with Odoo CRM via secure webhooks.',
     'description': """
@@ -19,7 +21,7 @@ Connect Webflow Forms to Odoo CRM using webhooks.
 * Connection wizard + Test Connection utilities.
 
 Compatible with Odoo 18 and 19.
-Runs on Odoo Online (SaaS), Odoo.sh and On-Premise - no external
+Runs on Odoo Online (SaaS), Odoo.sh, and on-premises; no external
 dependencies and no server-level access required.
 """,
     'author': 'Utsho Joy',
