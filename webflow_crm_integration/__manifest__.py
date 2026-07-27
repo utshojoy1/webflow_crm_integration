@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Webflow CRM Integration',
-    'version': '19.0.1.0.13',
+    'version': '18.0.1.0.13',
     'category': 'Sales/CRM',
     'summary': 'Integrate Webflow Forms with Odoo CRM via secure webhooks.',
     'description': """
